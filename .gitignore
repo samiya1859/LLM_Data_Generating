@@ -1,0 +1,5 @@
+.env
+ollama
+data_rewrite/__pycache__
+hotels/__pycache__
+hotels/management/commands/__pycache__

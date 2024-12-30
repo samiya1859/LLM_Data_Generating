@@ -1,0 +1,11 @@
+id,title,rating,location,latitude,longitude,room_type,price,description
+1,Hotel Sunshine,4.5,Los Angeles,34.0522,-118.2437,Private Room,150,Cozy private room with a beautiful view of the city skyline.
+2,Ocean Breeze Hotel,4.7,Miami,25.7617,-80.1918,Entire House,220,Beachfront property with modern amenities and spacious rooms.
+3,Mountain Retreat,4.8,Denver,39.7392,-104.9903,Shared Room,80,A peaceful retreat in the mountains. perfect for nature lovers.
+4,Lakeside Resort,4.6,Chicago,41.8781,-87.6298,Private Room,175,Located by the lake offering relaxing views and easy access to downtown.
+5,City Center Hotel,4.2,New York,40.7128,-74.0060,Entire House,300,Spacious and luxurious hotel located right in the heart of New York City.
+6,Cozy Cabin,4.4,Aspen,39.1911,-106.8175,Private Room,120,A small and charming cabin perfect for winter vacations in the snowy mountains.
+7,Sunny Days Hotel,4.3,Los Angeles,34.0522,-118.2437,Shared Room,90,Modern clean and affordable room near popular tourist destinations.
+8,Beach View Resort,4.9,Maui,20.7984,-156.3319,Entire House,350,A luxurious resort with stunning ocean views and exceptional service.
+9,Forest Lodge,4.6,Portland,45.5051,-122.6750,Private Room,160,Nestled in the forest offering a tranquil escape from the hustle and bustle of the city.
+10,Desert Oasis,4.7,Phoenix,33.4484,-112.0740,Entire House,250,A luxurious desert villa with private pool and stunning views of the surrounding desert.
