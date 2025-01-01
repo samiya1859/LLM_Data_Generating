@@ -1,7 +1,7 @@
 # LLM Data Generating Project
 
 ## Overview
-This project leverages a Large Language Model (LLM) to process and generate property data. It is built using Django and focuses on tasks such as rewriting titles and descriptions, generating summaries, ratings, and reviews for properties. Data is initially read from a CSV file and enhanced using the LLM.
+This project leverages a Large Language Model (LLM) to process and generate property data. It is built using Django and focuses on tasks such as rewriting titles and descriptions, generating summaries, ratings, and reviews for properties. Data is initially read from a CSV file and enhanced using the LLM. Later storing datas into PostgreSQl Database. 
 
 ---
 
@@ -53,6 +53,7 @@ Follow the instructions to pull the required Ollama model:
 ```bash
 docker pull ollama/model-name
 ```
+
 
 ### 4. Run Migrations
 ```bash
