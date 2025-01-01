@@ -48,12 +48,24 @@ cd LLM_Data_Generating
 pip install -r requirements.txt
 ```
 
-### 3. Pull Ollama Docker Model
-Follow the instructions to pull the required Ollama model:
+### 3. pull Ollama and Postgres
+**before pulling you have to set the docker-compose.yml file as per your database,version information.**
 ```bash
-docker pull ollama/model-name
+docker-compose up -d
 ```
+The -d flag will run the services in the background.
 
+**Check the Logs**
+```bash
+docker-compose logs -f ollama
+```
+This will show the logs for the ollama service in real-time
+
+**Stop the Services**
+When you're done, stop and remove the containers by running:
+```bash
+docker-compose down
+```
 
 ### 4. Run Migrations
 ```bash
@@ -99,6 +111,42 @@ Ensure your `hotel_datas.csv` file follows this structure:
 |----|-------|--------|----------|----------|-----------|-----------|-------|-------------|
 
 ---
+### Testing the LLM Model
+This section outlines how to test the functionality of the Ollama model integration, ensuring that the rewritten titles, descriptions, summaries, and generated ratings are accurate and properly populated in your Django models.
+
+```bash
+python manage.py test
+
+```
+### Getting Code Coverage
+To ensure that your tests cover a substantial portion of the code, you can use a code coverage tool. This section explains how to set up and use coverage to measure the effectiveness of your tests.
+#### Install Coverage Package
+First, you need to install the coverage package, which is used to measure the code coverage of your tests. You can install it by running:
+```bash
+pip install coverage
+```
+#### Running Tests with Coverage
+Once coverage is installed, you can run your tests with coverage tracking by using the following command:
+```bash
+coverage run --source='.' manage.py test
+```
+- --source='.' specifies the directory (your entire project) to monitor for coverage. This tells coverage to track which lines of your code are executed while the tests run.
+- manage.py test runs your Django tests.
+  ####    Generate Coverage Report
+After running the tests with coverage, generate a human-readable report:
+```bash
+coverage report
+```
+This will display a summary of the code coverage directly in your terminal. It will show you which lines of your code were executed and which were missed.
+
+If you want a more detailed, line-by-line report, you can run:
+```bash
+coverage html
+```
+This will generate an htmlcov directory with an HTML report. You can open the index.html file in your browser to view the coverage results.
+```bash
+open htmlcov/index.html  # For macOS or Linux
+```
 
 ## Notes
 - The `ollama` folder is ignored in the repository to avoid large file uploads. Pull it via Docker as mentioned above.
