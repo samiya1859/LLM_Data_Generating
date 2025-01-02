@@ -42,6 +42,13 @@ This project leverages a Large Language Model (LLM) to process and generate prop
 git clone https://github.com/samiya1859/LLM_Data_Generating.git
 cd LLM_Data_Generating
 ```
+and create a virtual environment
+```bash
+python3 -m venv env
+source env/bin/activate #for Linux
+.\env\Scripts\activate #for Windows
+```
+
 
 ### 2. Install Dependencies
 ```bash
